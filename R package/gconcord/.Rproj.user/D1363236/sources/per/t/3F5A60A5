@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543214341760.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2761246862",
+    "id" : "3F5A60A5",
+    "lastKnownWriteTime" : 1559713003,
+    "last_content_update" : 1560639212027,
+    "path" : "C:/Users/Aaron Zhou/Desktop/Github/zhipuPhdResearch/JSS/software/gconcord/src/core.cpp",
+    "project_path" : "src/core.cpp",
+    "properties" : {
+        "cursorPosition" : "316,1",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}

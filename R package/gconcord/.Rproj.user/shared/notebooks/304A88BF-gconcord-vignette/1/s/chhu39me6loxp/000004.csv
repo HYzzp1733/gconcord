@@ -1,0 +1,7 @@
+"0","omega3 <- gconcord(data = data, lambda1 = res3$lam1.optimal, lambda2 = res3$lam2.optimal)"
+"0","omega4 <- gconcord(data = data, lambda1 = res4$lam1.optimal, lambda2 = res4$lam2.optimal)"
+"0","p1 <- graphplot(omega3, edge.width = 0.5, varnames = colnames(data), "
+"0","                main = ""Predictive risk"")"
+"0","p2 <- graphplot(omega4, edge.width = 0.5, varnames = colnames(data), "
+"0","                main = ""Negative log-likelihood"")"
+"0","grid.arrange(p1, p2, ncol = 2)"
