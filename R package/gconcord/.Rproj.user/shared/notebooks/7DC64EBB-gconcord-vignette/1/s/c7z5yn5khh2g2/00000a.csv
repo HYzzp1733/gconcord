@@ -1,0 +1,15 @@
+"0","library(dplyr)"
+"0","library(knitr)"
+"0","library(kableExtra)"
+"2","
+Attaching package: ‘kableExtra’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    group_rows
+
+"
+"0","ans %>% "
+"0","  kable(caption = ""Running time comparison. For each case of p and gamma, running time in minutes / number of iterations are shown for cdws (coordinatewise descent), ISTA, and FISTA."") %>% "
+"0","  kable_styling(bootstrap_options = ""striped"") "

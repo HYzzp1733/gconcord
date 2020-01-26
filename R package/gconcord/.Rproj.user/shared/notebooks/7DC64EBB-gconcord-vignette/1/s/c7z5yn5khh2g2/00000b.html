@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="lib/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
+<script src="lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="lib/kePrint-0.0.1/kePrint.js"></script>
+
+</head>
+<body>
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<caption>Running time comparison. For each case of p and gamma, running time in minutes / number of iterations are shown for cdws (coordinatewise descent), ISTA, and FISTA.</caption>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> p </th>
+   <th style="text-align:right;"> gamma </th>
+   <th style="text-align:left;"> coordinate.wise </th>
+   <th style="text-align:left;"> ista </th>
+   <th style="text-align:left;"> fista </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 500 </td>
+   <td style="text-align:right;"> 0.5 </td>
+   <td style="text-align:left;"> 0.39/76 </td>
+   <td style="text-align:left;"> 0.16/52 </td>
+   <td style="text-align:left;"> 0.97/175 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 500 </td>
+   <td style="text-align:right;"> 1.0 </td>
+   <td style="text-align:left;"> 0.35/75 </td>
+   <td style="text-align:left;"> 0.14/60 </td>
+   <td style="text-align:left;"> 1.42/268 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 500 </td>
+   <td style="text-align:right;"> 2.0 </td>
+   <td style="text-align:left;"> 0.35/74 </td>
+   <td style="text-align:left;"> 0.11/50 </td>
+   <td style="text-align:left;"> 0.71/144 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 800 </td>
+   <td style="text-align:right;"> 0.5 </td>
+   <td style="text-align:left;"> 5.82/78 </td>
+   <td style="text-align:left;"> 0.46/57 </td>
+   <td style="text-align:left;"> 3.27/152 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 800 </td>
+   <td style="text-align:right;"> 1.0 </td>
+   <td style="text-align:left;"> 6.68/82 </td>
+   <td style="text-align:left;"> 0.63/58 </td>
+   <td style="text-align:left;"> 4.30/174 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 800 </td>
+   <td style="text-align:right;"> 2.0 </td>
+   <td style="text-align:left;"> 5.78/83 </td>
+   <td style="text-align:left;"> 0.49/49 </td>
+   <td style="text-align:left;"> 2.46/129 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1000 </td>
+   <td style="text-align:right;"> 0.5 </td>
+   <td style="text-align:left;"> 10.35/74 </td>
+   <td style="text-align:left;"> 0.77/52 </td>
+   <td style="text-align:left;"> 7.46/300 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1000 </td>
+   <td style="text-align:right;"> 1.0 </td>
+   <td style="text-align:left;"> 14.33/102 </td>
+   <td style="text-align:left;"> 0.77/59 </td>
+   <td style="text-align:left;"> 5.86/248 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1000 </td>
+   <td style="text-align:right;"> 2.0 </td>
+   <td style="text-align:left;"> 14.27/100 </td>
+   <td style="text-align:left;"> 0.87/65 </td>
+   <td style="text-align:left;"> 4.17/142 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1500 </td>
+   <td style="text-align:right;"> 0.5 </td>
+   <td style="text-align:left;"> 52.52/92 </td>
+   <td style="text-align:left;"> 2.22/69 </td>
+   <td style="text-align:left;"> 12.06/173 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1500 </td>
+   <td style="text-align:right;"> 1.0 </td>
+   <td style="text-align:left;"> 52.62/92 </td>
+   <td style="text-align:left;"> 2.32/78 </td>
+   <td style="text-align:left;"> 11.53/163 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1500 </td>
+   <td style="text-align:right;"> 2.0 </td>
+   <td style="text-align:left;"> 56.25/100 </td>
+   <td style="text-align:left;"> 2.04/70 </td>
+   <td style="text-align:left;"> 13.98/244 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2000 </td>
+   <td style="text-align:right;"> 0.5 </td>
+   <td style="text-align:left;"> 119.04/87 </td>
+   <td style="text-align:left;"> 4.17/59 </td>
+   <td style="text-align:left;"> 21.49/153 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2000 </td>
+   <td style="text-align:right;"> 1.0 </td>
+   <td style="text-align:left;"> 104.35/76 </td>
+   <td style="text-align:left;"> 3.98/66 </td>
+   <td style="text-align:left;"> 23.84/179 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2000 </td>
+   <td style="text-align:right;"> 2.0 </td>
+   <td style="text-align:left;"> 119.29/87 </td>
+   <td style="text-align:left;"> 3.94/64 </td>
+   <td style="text-align:left;"> 25.14/219 </td>
+  </tr>
+</tbody>
+</table>
+</body>
+</html>

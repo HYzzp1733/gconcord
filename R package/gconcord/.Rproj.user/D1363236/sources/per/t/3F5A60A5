@@ -12,9 +12,12 @@
     "path" : "C:/Users/Aaron Zhou/Desktop/Github/zhipuPhdResearch/JSS/software/gconcord/src/core.cpp",
     "project_path" : "src/core.cpp",
     "properties" : {
-        "cursorPosition" : "316,1",
+        "cursorPosition" : "11,0",
         "scrollLine" : "0"
     },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
     "relative_order" : 4,
     "source_on_save" : false,
     "source_window" : "",

@@ -1,6 +1,0 @@
-"0","negL <- function(omega, data){"
-"0","  n <- nrow(data)"
-"0","  loss <- -n * log(max(det(omega), 1e-15)) + ## add a threshold to avoid log(0)"
-"0","    sum(diag(omega %*% t(data) %*% data))"
-"0","  return(loss)"
-"0","}"

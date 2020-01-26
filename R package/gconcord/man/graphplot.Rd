@@ -4,9 +4,19 @@
 \alias{graphplot}
 \title{Visualization of graphical model.}
 \usage{
-graphplot(met, varnames, main, seed, mode = "circle", label = TRUE,
-  edge.width = 1, color = "lightpink", edge.color = "gray",
-  edge.size = "weights", ...)
+graphplot(
+  met,
+  varnames,
+  main,
+  seed,
+  mode = "circle",
+  label = TRUE,
+  edge.width = 1,
+  color = "lightpink",
+  edge.color = "gray",
+  edge.size = "weights",
+  ...
+)
 }
 \arguments{
 \item{met}{the estimated inverse covariance matrix.}

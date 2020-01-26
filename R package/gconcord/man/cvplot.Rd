@@ -4,8 +4,17 @@
 \alias{cvplot}
 \title{Level Plot Function of Validation Error Matrix from Cross Validation}
 \usage{
-cvplot(mat, col.regions = heat.colors(100), scales = list(x = list(rot
-  = 90)), contour = TRUE, xlab, ylab, main, type, ...)
+cvplot(
+  mat,
+  col.regions = heat.colors(100),
+  scales = list(x = list(rot = 90)),
+  contour = TRUE,
+  xlab,
+  ylab,
+  main,
+  type,
+  ...
+)
 }
 \arguments{
 \item{mat}{the validation error matrix to be visualized.}

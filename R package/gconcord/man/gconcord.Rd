@@ -4,8 +4,16 @@
 \alias{gconcord}
 \title{Graphical CONvex CORrelation selection methoD (gconcord)}
 \usage{
-gconcord(data, S, lambda1, lambda2 = 0, method = "coordinatewise",
-  tol = 1e-05, maxit = 100, steptype = 0)
+gconcord(
+  data,
+  S,
+  lambda1,
+  lambda2 = 0,
+  method = "coordinatewise",
+  tol = 1e-05,
+  maxit = 100,
+  steptype = 0
+)
 }
 \arguments{
 \item{data}{a numerical matrix or a data frame with n observations (rows) and

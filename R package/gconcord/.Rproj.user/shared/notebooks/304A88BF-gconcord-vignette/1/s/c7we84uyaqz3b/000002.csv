@@ -1,4 +1,0 @@
-"0","omega3 <- gconcord(data = data, lambda1 = res3$lam1.optimal, lambda2 = res3$lam2.optimal)"
-"2","Error in diag(lambda1, p) : 
-  'nrow' or 'ncol' cannot be specified when 'x' is a matrix
-"

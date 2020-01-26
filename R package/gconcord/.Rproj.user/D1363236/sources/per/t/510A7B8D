@@ -4,17 +4,20 @@
     "created" : 1543977559434.000,
     "dirty" : false,
     "encoding" : "UTF-8",
-    "folds" : "265|21|291|0|\n309|35|312|0|\n406|94|427|0|\n447|58|465|0|\n",
+    "folds" : "265|21|291|0|\n447|58|465|0|\n",
     "hash" : "742916278",
     "id" : "510A7B8D",
     "lastKnownWriteTime" : 1559968484,
-    "last_content_update" : 1561493819154,
+    "last_content_update" : 1569689290470,
     "path" : "C:/Users/Aaron Zhou/Desktop/Github/zhipuPhdResearch/JSS/software/gconcord/R/gconcord.R",
     "project_path" : "R/gconcord.R",
     "properties" : {
-        "cursorPosition" : "183,13",
-        "scrollLine" : "148"
+        "cursorPosition" : "131,0",
+        "scrollLine" : "0"
     },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
     "relative_order" : 3,
     "source_on_save" : false,
     "source_window" : "",

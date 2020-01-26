@@ -4,8 +4,12 @@
 \alias{get.data}
 \title{Get daily returns of DJIA component stocks for a given time horizon.}
 \usage{
-get.data(start = "1990-01-03", end = "2018-02-28", type = "return",
-  na.rm = TRUE)
+get.data(
+  start = "1990-01-03",
+  end = "2018-02-28",
+  type = "return",
+  na.rm = TRUE
+)
 }
 \arguments{
 \item{start}{optional, a string of starting date with format yyyy-mm-dd. The default

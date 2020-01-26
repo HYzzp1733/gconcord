@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1580014385806.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "742916278",
+    "id" : "A33EEB47",
+    "lastKnownWriteTime" : 1559968484,
+    "last_content_update" : 1559968484,
+    "path" : "E:/gconcord/R/gconcord.R",
+    "project_path" : "R/gconcord.R",
+    "properties" : {
+        "cursorPosition" : "27,33",
+        "scrollLine" : "59"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
