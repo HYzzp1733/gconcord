@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1563995775626.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4221663829",
+    "id" : "A8E64100",
+    "lastKnownWriteTime" : 1559969243,
+    "last_content_update" : 1559969243,
+    "path" : "C:/Users/Aaron Zhou/Desktop/Github/zhipuPhdResearch/JSS/software/gconcord/tests/testthat/testthat_1.R",
+    "project_path" : "tests/testthat/testthat_1.R",
+    "properties" : {
+        "cursorPosition" : "9,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

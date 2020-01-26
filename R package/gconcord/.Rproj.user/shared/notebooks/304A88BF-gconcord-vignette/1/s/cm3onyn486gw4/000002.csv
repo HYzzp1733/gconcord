@@ -1,4 +1,0 @@
-"0","# Negative log-likelihood loss function"
-"0","res4 <- cv.gconcord(data = data, lam1.vec = Lam, K = 5, FUN = negL)"
-"0","par(mfrow=c(1,2))"
-"0","cvplot(res4$val.error, ylab = ""Loss values"")"

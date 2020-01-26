@@ -1,0 +1,39 @@
+Package: gconcord
+Title: Graphical CONvex CORrelation selection methoD
+Version: 1.0
+Authors@R: c(
+  person("Zhipu", "Zhou", email = "zhipu@ucsb.edu", role = c("aut", "cre")),
+  person("Sang-Yun", "Oh", email = "syoh@ucsb.edu", role = c("aut")))
+Description: gconcord is an R package that help estimate a sparse 
+  inverse covariance matrix for high dimensional data using graphical CONCORD method. 
+  It enables users to obtain a sparse graphical model for high-dimensional data using 
+  either a L1 penalty or an elastic net penalty. The flexibility and simplicity of 
+  the package facilitate users to apply graphical CONCORD easily. 
+Depends:
+    R (>= 3.3.0),
+    Rcpp,
+    RcppEigen,
+    plyr
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+LinkingTo: Rcpp, RcppEigen
+Imports:
+    Rcpp,
+    RcppEigen,
+    plyr,
+    lattice,
+    GGally,
+    ggplot2
+Suggests:
+    MASS,
+    sna,
+    testthat,
+    knitr,
+    rmarkdown,
+    lubridate
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
+NeedsCompilation: yes
+Packaged: 2018-10-27 05:52:22 UTC; Zhipu Zhou
+Maintainer: Zhipu Zhou <zhipu@ucsb.edu>

@@ -1,0 +1,13 @@
+"0","p1 <- cvplot(res1$val.error, main = ""Loss values"")"
+"0","p2 <- cvplot(res1$val.error.quantile, main = ""Loss quantiles"")"
+"0","library(gridExtra)"
+"2","
+Attaching package: ‘gridExtra’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    combine
+
+"
+"0","grid.arrange(p1, p2, ncol = 2)"

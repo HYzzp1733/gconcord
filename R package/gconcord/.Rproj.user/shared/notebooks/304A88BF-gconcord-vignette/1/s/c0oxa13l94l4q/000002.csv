@@ -1,4 +1,0 @@
-"0","data2 = get.data( start = ""2008-03-01"", end = ""2008-03-31"", na.rm = FALSE)  "
-"0","# Assume data are not available and only S is available"
-"0","S = cov(data2, use = ""complete.obs"")   ## assume only S is available"
-"0","omega <- gconcord(S = S, lambda1 = 0.2, lambda2 = 0.1)"

@@ -4,9 +4,18 @@
 \alias{cv.gconcord}
 \title{Cross Validation for the Tuning Parameters in Graphical CONCORD Methods}
 \usage{
-cv.gconcord(data, rand, FUN, lam1.vec, lam2.vec, K = 3,
-  method = "coordinatewise", tol = 1e-05, maxit = 100,
-  steptype = 0)
+cv.gconcord(
+  data,
+  rand,
+  FUN,
+  lam1.vec,
+  lam2.vec,
+  K = 3,
+  method = "coordinatewise",
+  tol = 1e-05,
+  maxit = 100,
+  steptype = 0
+)
 }
 \arguments{
 \item{data}{a numerical matrix or a data frame with n observations (rows) and p variables (columns).}

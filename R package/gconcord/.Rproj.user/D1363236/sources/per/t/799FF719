@@ -13,9 +13,12 @@
     "project_path" : "vignettes/gconcord-vignette.Rmd",
     "properties" : {
         "cursorPosition" : "472,22",
-        "scrollLine" : "461",
+        "scrollLine" : "0",
         "working_dir" : "current"
     },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
     "relative_order" : 5,
     "source_on_save" : false,
     "source_window" : "",
