@@ -1,2 +1,0 @@
-
-from gconcord import gconcord
