@@ -80,6 +80,9 @@ The sparse estimation of the precision matrix is computed as
 omega <- gconcord(data = data, lambda1 = cv$lam1.optimal, lambda2 = cv$lam2.optimal)
 ```
 
+# Acknowledgements
+
+Not available.
 
 # Reference
 
