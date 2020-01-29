@@ -25,10 +25,12 @@ bibliography: paper.bib
 
 Graphs have played an important role in the modern statistical analysis due to their ability to intuitively capture and describe relationships among a group of variables. The sparse precision matrix is a popular tool to characterize the underlying dependency relationships of variables. There have existed several methods for the sparse precision matrix estimation. Graphical lasso is formulated for multivariate Gaussian distributed data when observations were limited [@Friedman2008]. Its estimator can be obtained by the R package ``glasso`` or the Python module ``graphical_lasso`` in scikit-learn. To extend the application to non-Gaussian data, the SPACE (Sparse PArtial Correlation Estimation) method is proposed [@Peng2009] and can be obtained by the R package ``space``.  However, the convergence is not guaranteed in SPACE method. As an improvement, graphical Concord (CONvex CORrelation selection methoD) is proposed as a sparse penalized maximum pseudo-likelihood estimator for the precision matrix [@Khare2014, @Ali2017]. Multiple approaches have been introduced to solve the Concord optimization problem [@Oh2014, @Ali2017], but no package implements and unifies all the approaches. The purpose of this software is to fill this gap.
 
-``gconcord`` are the software packages that use Concord to provide a sparse estimation for a precision matrix. They unify methods that solve the Concord optimization problem, including coordinate-wise descent algorithm, ISTA (Iterative Soft-thresholding Algorithm) method, and FISTA (Fast Iterative Soft-thresholding Algorithm) method. We provide both the R package ``gconcord`` and the Python package ``gconcord.graphical_concord_``, both of which share the same core file implemented using C++ languages. The packages are flexible, user-friendly, and easy to maintain. The structure of the packages can be visualized in Figure 1.
+We develop the software packages that use Concord to provide a sparse estimation for a precision matrix. They unify methods that solve the Concord optimization problem, including coordinate-wise descent algorithm, ISTA (Iterative Soft-thresholding Algorithm) method, and FISTA (Fast Iterative Soft-thresholding Algorithm) method. We provide both the R package ``gconcord`` and the Python package ``gconcord.graphical_concord_``, both of which share the same core file implemented using C++ languages. The packages are flexible, user-friendly, and easy to maintain. The structure of the packages can be visualized in Figure 1.
 
 
 ![structure](https://github.com/HYzzp1733/gconcord/blob/master/JOSS%20paper/Struct.JPG)
+
+The R package contains the Concord solver function ``gconcord``, the cross-validation function ``cv.gconcord``, and other supporting functions. The Python package contains the Concord solver class ``GraphicalConcord`` and the cross-validation function ``GraphicalConcordCV``. 
 
 
 # Statement of need
@@ -57,7 +59,7 @@ where $\mathbf{\Lambda}_1 = ((\lambda_{ij}))_{1\leq i,j\leq p}$ is a $p\times p$
 
 
 
-# Examples
+# An example for R package
 
 Suppose we hope to estimate a sparse precision matrix for the stock returns of Dow Jones Industrial Average (DJIA) component stocks from December 1, 2017 to December 31, 2017. We extract the required data, conduct the cross-validation to find out the optimal $\lambda_1$ and $\lambda_2$. In the cross-validation procedure, the loss values and the quantiles of loss values over the grid of $(\lambda_1, \lambda_2)$ can be visualized in Figure 2.
 
@@ -78,6 +80,26 @@ The sparse estimation of the precision matrix is computed as
 
 ```r
 omega <- gconcord(data = data, lambda1 = cv$lam1.optimal, lambda2 = cv$lam2.optimal)
+```
+
+# An example for Python package
+
+In this example, we generate multivariate normal random numbers, conduct the cross-validation to find out the optimal penalty parameters and compute the Concord estimator. The code is shown as follows.
+
+```Python
+import numpy as np
+from gconcord.graphical_concord_ import GraphicalConcord, GraphicalConcordCV
+
+p = 50    ## data dimension
+mean = [0 for i in range(p)]  ## zero-mean
+cov = np.diag(np.random.uniform(1, 2, p))  ## diagonal covariance matrix
+x = np.random.multivariate_normal(mean, cov, 40)
+
+cv = GraphicalConcordCV()     ## set cross-validation 
+cvans = cv.fit(x)             ## fit the data
+model = GraphicalConcord(lam1 = cv.lam1, lam2 = cv.lam2)  ## set Concord solver
+ans = model.fit(x)            ## fit the data
+ans.omega                     ## print out the estimator
 ```
 
 # Acknowledgements
