@@ -1,4 +1,0 @@
-"0","knitr::opts_chunk$set(cache = TRUE)"
-"0","indent1 = '    '"
-"0","indent2 = paste(rep(indent1, 2), collapse='')"
-"0","indent3 = paste(rep(indent1, 3), collapse='')"

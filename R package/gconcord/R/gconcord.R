@@ -187,6 +187,7 @@ cv.gconcord <- function(data, rand, FUN,
                         lam1.vec, lam2.vec,
                         K = 3, method = "coordinatewise", tol = 1e-5, maxit = 100, steptype = 0)
 {
+  if(!require("plyr")){ install.packages("plyr")}
   if(missing(rand)){ rand <- sample( cut(seq.int(nrow(data)), breaks = K, labels = FALSE) ) }
   if(missing(FUN)){ FUN = pred.risk }
   if(missing(lam1.vec)){ lam1.vec = 10^seq(-1.2,0,0.05) - 10^(-1.2) }
@@ -345,6 +346,10 @@ graphplot <- function(met, varnames, main, seed, mode = "circle", label = TRUE,
                         edge.width = 1, color = "lightpink",
                         edge.color = "gray", edge.size = "weights", ...){
   # assign labels
+  if(!require("GGally")){install.packages("GGally")}
+  if(!require("network")){install.packages("network")}
+  if(!require("sna")){ install.packages("sna")}
+  if(!require("ggplot2")){ install.packages("ggplot2")}
   if(missing(varnames)){
     if(!is.null(colnames(met))){
       varnames <- colnames(met)
@@ -405,6 +410,7 @@ graphplot <- function(met, varnames, main, seed, mode = "circle", label = TRUE,
 #'
 #' @export
 get.data <- function(start = "1990-01-03", end = "2018-02-28", type = "return", na.rm = TRUE){
+  if(!require("lubridate")){ install.packages("lubridate")}
   if(type == "price"){
     data = gconcord::DJPrice
   }else if(type == "index"){

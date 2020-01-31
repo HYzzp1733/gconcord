@@ -1,3 +1,0 @@
-"0","p1 <- cvplot(res2$val.error, main = ""Loss values"")"
-"0","p2 <- cvplot(res2$val.error.quantile, main = ""Loss quantiles"")"
-"0","grid.arrange(p1, p2, ncol = 2)"

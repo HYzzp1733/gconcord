@@ -5,41 +5,41 @@
 \alias{return}
 \title{Daily arithmatic returns of 30 component stocks in DJIA index
 from 1990/01/03 to 2018/02/28}
-\format{A data frame with 7095 rows and 30 columns:
-\describe{
-  \item{AAPL}{arithmatic return}
-  \item{AXP }{arithmatic return}
-  \item{ BA }{arithmatic return}
-  \item{CAT }{arithmatic return}
-  \item{CSCO}{arithmatic return}
-  \item{CVX }{arithmatic return}
-  \item{DIS }{arithmatic return}
-  \item{DWDP}{arithmatic return}
-  \item{ GE }{arithmatic return}
-  \item{ GS }{arithmatic return}
-  \item{ HD }{arithmatic return}
-  \item{IBM }{arithmatic return}
-  \item{INTC}{arithmatic return}
-  \item{JNJ }{arithmatic return}
-  \item{JPM }{arithmatic return}
-  \item{ KO }{arithmatic return}
-  \item{MCD }{arithmatic return}
-  \item{MMM }{arithmatic return}
-  \item{MRK }{arithmatic return}
-  \item{MSFT}{arithmatic return}
-  \item{NKE }{arithmatic return}
-  \item{PFE }{arithmatic return}
-  \item{ PG }{arithmatic return}
-  \item{TRV }{arithmatic return}
-  \item{UNH }{arithmatic return}
-  \item{UTX }{arithmatic return}
-  \item{ V  }{arithmatic return}
-  \item{ VZ }{arithmatic return}
-  \item{WTM }{arithmatic return}
-  \item{XOM }{arithmatic return}
+\format{A data frame with 7095 rows and 30 columns.
+\describe{Airthmetic returns of stocks
+    AAPL
+  , AXP
+  ,  BA
+  , CAT
+  , CSCO
+  , CVX
+  , DIS
+  , DWDP
+  ,  GE
+  ,  GS
+  ,  HD
+  , IBM
+  , INTC
+  , JNJ
+  , JPM
+  ,  KO
+  , MCD
+  , MMM
+  , MRK
+  , MSFT
+  , NKE
+  , PFE
+  ,  PG
+  , TRV
+  , UNH
+  , UTX
+  ,  V
+  ,  VZ
+  , WTM
+  , XOM
 }}
 \source{
-\URL{https://finance.yahoo.com/}
+https://finance.yahoo.com/
 }
 \usage{
 return
