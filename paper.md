@@ -99,4 +99,3 @@ ans.omega                     ## print out the estimator
 Not available.
 
 # Reference
-
