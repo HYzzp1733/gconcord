@@ -4,12 +4,9 @@
 \name{DJIndex}
 \alias{DJIndex}
 \title{Daily DJIA index price from 1990/01/02 to 2018/02/28}
-\format{A data frame with 7096 rows and 30 columns:
-\describe{
-  \item{Index}{daily index price}
-}}
+\format{A data frame with 7096 daily index price.}
 \source{
-\URL{https://finance.yahoo.com/}
+https://finance.yahoo.com/
 }
 \usage{
 DJIndex

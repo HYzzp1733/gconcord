@@ -1,4 +1,0 @@
-"0","# Predictive risk loss function"
-"0","res3 <- cv.gconcord(data = data, lam1.vec = Lam, K = 5)  "
-"0","par(mfrow=c(1,2))"
-"0","cvplot(res3$val.error, ylab = ""Loss values"")"
