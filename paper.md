@@ -28,7 +28,7 @@ We develop both the R and the Python packages that use graphical Concord method 
 
 <center>
 
-![Figure 1: The structures of R and Python packages.](Struct.jpg)
+![Figure 1: The structures of R and Python packages.](Struct.JPG)
 
 </center>
 
