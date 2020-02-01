@@ -6,14 +6,14 @@ tags:
   - Sparse graphical model
   - Sparse estimation for the precision matrix
 authors:
+  - name: Zhipu Zhou
+    affiliation: 1
   - name: Sang-Yun Oh
     affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Zhipu Zhou
-    affiliation: 2
 affiliations:
- - name: Lawrence Berkeley National Laboratory
-   index: 1
  - name: University of California - Santa Barbara
+   index: 1
+ - name: Lawrence Berkeley National Laboratory
    index: 2
 date: 26 January 2020
 bibliography: paper.bib
@@ -28,7 +28,7 @@ We develop both the R and the Python packages that use graphical Concord method 
 
 <center>
 
-![Figure 1: The structures of R and Python packages.](Struct.JPG)
+![The structures of R and Python packages.](Struct.JPG)
 
 </center>
 
@@ -79,7 +79,7 @@ grid.arrange(p1, p2, ncol = 2)
 
 <center>
 
-![Figure 2: Heatmap of the validation loss over the grid of $(\lambda_1, \lambda_2$)](fig1.jpeg)
+![Heatmap of the validation loss over the grid of $(\lambda_1, \lambda_2$)](fig1.jpeg)
 
 </center>
 
