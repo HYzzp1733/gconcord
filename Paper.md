@@ -20,6 +20,8 @@ bibliography: paper.bib
 ---
 
 
+
+
 # Summary
 
 Graphs have played an important role in the modern statistical analysis due to their ability to intuitively capture and describe relationships among a group of variables. The sparse precision matrix is a popular tool to characterize the underlying dependency relationships of variables. There have existed several methods for the sparse precision matrix estimation. Graphical lasso is formulated for multivariate Gaussian distributed data when observations were limited [@Friedman2008]. Its estimator can be obtained by the R package ``glasso`` or the Python module ``graphical_lasso`` in scikit-learn. To extend the application to non-Gaussian data, the SPACE (Sparse PArtial Correlation Estimation) method is proposed [@Peng2009] and can be obtained by the R package ``space``.  However, the convergence is not guaranteed in SPACE method. As an improvement, graphical Concord (CONvex CORrelation selection methoD) is proposed as a sparse penalized maximum pseudo-likelihood estimator for the precision matrix [@Khare2014; @Ali2017]. Multiple approaches have been introduced to solve the Concord optimization problem [@Oh2014; @Ali2017], but no package implements and unifies all the approaches. The purpose of this software is to fill this gap.
