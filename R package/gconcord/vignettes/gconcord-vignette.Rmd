@@ -364,7 +364,7 @@ Generally, the loss quantiles can better differentiate the magnitudes of validat
 
 
 
-### Generalized CONCORD estimator and graph visualization
+### Graphical Concord estimator and graph visualization
 
 After computing the optimal tuning parameters for $\lambda_1$ and $\lambda_2$, it is easy to obtain a graphical CONCORD estimator and the corresponding graph as follows:
 

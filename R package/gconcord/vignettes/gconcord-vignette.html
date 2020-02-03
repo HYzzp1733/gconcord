@@ -12,7 +12,7 @@
 
 <meta name="author" content="Zhipu Zhou, Sang-Yun Oh" />
 
-<meta name="date" content="2020-01-31" />
+<meta name="date" content="2020-02-02" />
 
 <title>An R package for Sparse Graphical Models</title>
 
@@ -310,7 +310,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">An R package for Sparse Graphical Models</h1>
 <h4 class="author">Zhipu Zhou, Sang-Yun Oh</h4>
-<h4 class="date">2020-01-31</h4>
+<h4 class="date">2020-02-02</h4>
 
 
 
@@ -502,8 +502,8 @@ Negative log-likelihood loss function
 </div>
 <p>Generally, the loss quantiles can better differentiate the magnitudes of validation errors in the visualization than the loss values. Both quantities would present the same relative loss magnitudes and the same combinations of optimal tuning parameters. In addition, if an optimal point is located along the non-zero boundary of tuning parameters, that may indicate that the range of candidate values of tuning parameters is not wide enough, and a wider range of candidate values should be included in the arguments  or  in the function .</p>
 </div>
-<div id="generalized-concord-estimator-and-graph-visualization" class="section level3">
-<h3>Generalized CONCORD estimator and graph visualization</h3>
+<div id="graphical-concord-estimator-and-graph-visualization" class="section level3">
+<h3>Graphical Concord estimator and graph visualization</h3>
 <p>After computing the optimal tuning parameters for <span class="math inline">\(\lambda_1\)</span> and <span class="math inline">\(\lambda_2\)</span>, it is easy to obtain a graphical CONCORD estimator and the corresponding graph as follows:</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" title="1">omega1 &lt;-<span class="st"> </span><span class="kw">gconcord</span>(<span class="dt">data =</span> data, <span class="dt">lambda1 =</span> res1<span class="op">$</span>lam1.optimal, </a>
 <a class="sourceLine" id="cb14-2" title="2">                   <span class="dt">lambda2 =</span> res1<span class="op">$</span>lam2.optimal)</a>
